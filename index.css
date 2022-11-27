@@ -147,18 +147,20 @@ nav ul li a:hover {
 .contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: column wrap;
 }
 .contact h2{
     font-size: 45px;
 }
 label{
     font-family: 'Berkshire Swash', cursive;
-    display:block;
     font-weight: bold;
     font-size: larger;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column wrap;
     
 }
 #Name, #Mobile, #Email{
@@ -169,6 +171,8 @@ label{
     border-radius:5px;
 }
 #Message{
+    display: flex;
+    flex-direction: column;
     height:100px;
     width:550px;
     border-color: black;
