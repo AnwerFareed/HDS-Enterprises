@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: row wrap;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    margin: 10px 10px;
+}
+
+#logo img {
+    margin: 3px 4px;
+    height: 45px;
+    width: 45px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'DM Serif Display', serif;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+nav ul li a { 
+    padding: 3px 22px;
+    text-decoration: none;
+    color:  #220ee8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(57, 58, 58);
+    border: 2px solid;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(bg.png) no-repeat center;
+    top: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#home {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+}
+#home h1 {
+    font-family: 'Berkshire Swash', cursive;
+     /* font-family: 'DM Serif Display', serif; */
+    /* font-family: 'Playball', cursive; */
+    /* font-family: 'Sacramento', cursive; */
+    color:  #00ffeb;
+    text-shadow: 8px 7px 8px black;;
+    font-size: 55px;
+}
+#home p{
+    font-family: 'Playball', cursive;
+    color:black;
+    font-size: 1.5rem;
+}
+#box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-flow: row wrap;
+
+}
+.catalogue1{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 219px;
+    width: 242px;
+    box-shadow: 1px 2px 10px 3px grey;
+    
+}
+.catalogue1 img{
+    height: 98px;
+    width:108px;   
+}
+.catalogue1 h2{
+    color:grey;
+    text-align: center;
+    font-size: 18px;
+
+}
+.catalogue1 button{
+    border: 2px solid black;
+    height: 25px;
+    width: 90px; 
+}
+.catalogue1 button a{
+    text-align: center;
+    top: 35px;
+    color:darkolivegreen;
+    font-family: 'DM Serif Display', serif;
+    text-decoration: none;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: column wrap;
+}
+.contact h2{
+    font-size: 45px;
+}
+label{
+    font-family: 'Berkshire Swash', cursive;
+    display:block;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+#Name, #Mobile, #Email{
+    height:32px;
+    width:550px;
+    border-color: black;
+    border-width: 2.5px;
+    border-radius:5px;
+}
+#Message{
+    height:100px;
+    width:550px;
+    border-color: black;
+    border-width: 2.5px;
+    border-radius:5px;
+}
+#Mobile::-webkit-inner-spin-button{
+    /* To remove Inner spin button in the Input type (number) */
+    appearance: None;
+}
